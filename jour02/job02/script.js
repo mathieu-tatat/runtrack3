@@ -23,11 +23,11 @@
 
             document.addEventListener('DOMContentLoaded', () => {
                 function showhide() {
-                    let citation=document.querySelector('citation')
+                    var citation=document.querySelector('citation')
                     if (citation ==null){
-                        let x = document.createElement("citation")
-                        let y = document.querySelector('body')
-                        let z = y.z
+                        var x = document.createElement("citation")
+                        var y = document.querySelector('body')
+                        var z = y.z
                         y.insertBefore(x, z)
                         document.querySelector('citation').innerHTML = "L'important n'est pas la chute, mais l'atterrissage"
                     }
@@ -36,7 +36,7 @@
                     }
                 }
             
-                    let bouton = document.querySelector('#button')
+                    var bouton = document.querySelector('#button')
                     bouton.addEventListener("click", () => {
                         showhide()
                     })
