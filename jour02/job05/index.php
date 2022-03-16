@@ -11,6 +11,7 @@
     <title>charge bar</title>
 </head>
 <body>
+    
 <footer>
 </footer>
 </body>

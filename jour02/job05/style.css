@@ -3,10 +3,12 @@ body{
     min-height: 4096px;
 }
 footer{
-    
+    --couleur:green;
     position: fixed;
     width: 100%;
     background: var(--couleur);
     margin-top: 350px;
     height: 50px;
+    transition: background-color 0.6s ease;
 }
+

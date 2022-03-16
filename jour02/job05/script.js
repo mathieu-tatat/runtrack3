@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
-    window.addEventListener('scroll', (e) => {
+    window.addEventListener('scroll', (event) => {
 
         var footer = document.querySelector('footer')
-        var pourcent =Math.round (100 * window.scrollY / 4096)
+        var scroll = Math.round (100 * window.scrollY / 4096)
 
-        footer.setAttribute('style','--couleur:#FF'+pourcent+pourcent)
+        footer.setAttribute('style','--couleur:#FF'+scroll+scroll)
     })
 })
