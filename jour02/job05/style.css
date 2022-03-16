@@ -1,0 +1,12 @@
+
+body{
+    min-height: 4096px;
+}
+footer{
+    
+    position: fixed;
+    width: 100%;
+    background: var(--couleur);
+    margin-top: 350px;
+    height: 50px;
+}
