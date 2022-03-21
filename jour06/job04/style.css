@@ -1,14 +1,7 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-main{
-    margin-top: 100px;
-}
 .header {
-    background-color: #374151;
+    background-color: #6f84a5;
     width: calc(100% - 40px);
-    height: 70px;
+    height: 100px;
     position: fixed;
     top: 0;
     left: 0;
@@ -19,7 +12,10 @@ main{
    
 }
 
-
+img{
+    width: 70px;
+    height: 70px;
+}
 .header__nav__menu {
     padding: 0;
     margin: 0;
@@ -73,9 +69,9 @@ main{
         position: fixed;
         top: 0;
         right: 0;
-        width: 300px;
+        width: 200px;
         height: 100vh;
-        background-color: #374151;
+        background-color: #6f84a5;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -115,11 +111,6 @@ main{
 
     .overlay-menu-mobile {
         position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: rgba(0,0,0,0.6);
         display: none;
     }
 
