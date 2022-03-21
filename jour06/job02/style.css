@@ -9,9 +9,15 @@ body{
     }
 }
     
-@media (max-width: 600px) { 
+@media (min-width: 300px) and (max-width: 600px) { 
 
     body{
     background-color: #275fa0;
+    }
+}
+@media (max-width: 300px) { 
+
+    body{
+    background-color: #ffffff;
     }
 }
