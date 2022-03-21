@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+main{
+    margin-top: 100px;
+}
+.header {
+    background-color: #374151;
+    width: calc(100% - 40px);
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+   
+}
+
+
+.header__nav__menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+}
+
+.header__nav__menu__link {
+    margin-right: 20px;
+}
+
+
+
+
+.header__nav__menu__link a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__nav__menu__link a:after {
+    background-color: #fff;
+}
+
+
+.header__burger {
+    display: none;
+
+}
+
+.header__burger svg {
+    stroke: #fff;
+    width: 22px;
+    height: 22px;
+}
+
+.header__nav__close {
+    display: none;
+}
+
+@media (max-width: 767px) {
+
+    .header__burger {
+        display: block;
+        cursor: pointer;
+    }
+
+
+    .header__nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100vh;
+        background-color: #374151;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+
+    .header__nav.open {
+        display: flex;
+        animation: transformMenu 300ms ease-in-out forwards;
+    }
+
+    
+    .header__nav__menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header__nav__menu__link {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .header__nav__close {
+        display: block;
+        cursor: pointer;
+        
+    }
+
+    .header__nav__close svg {
+        stroke: #fff;
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+    }
+
+    .overlay-menu-mobile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.6);
+        display: none;
+    }
+
+    .overlay-menu-mobile.open {
+        display: block;
+    }
+
+}

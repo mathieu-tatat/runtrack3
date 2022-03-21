@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Titre de la page</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="overlay-menu-mobile" onclick="closeMenuMobile()"></div>
+    <header class="header">
+        <div class="header__logo">
+            
+        </div>
+        <nav class="header__nav">
+            <div class="header__nav__close" onclick="closeMenuMobile()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </div>
+            <ul class="header__nav__menu">
+                <li class="header__nav__menu__link">
+                    <a href="#">Home</a>
+                </li>
+                <li class="header__nav__menu__link">
+                    <a href="#">Blog</a>
+                </li>
+                <li class="header__nav__menu__link">
+                    <a href="#">About</a>
+                </li>
+                <li class="header__nav__menu__link">
+                    <a href="#">Connexion</a>
+                </li>
+
+            </ul>
+        </nav>
+        <div class="header__burger" onclick="openMenuMobile()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </div>
+    </header>
+
+    <main></main>
+        <div style="height: 1000px;"></div>
+    </main>
+
+    <script>
+        function openMenuMobile() {
+            document.querySelector('.header__nav').classList.add('open');
+            document.querySelector('.overlay-menu-mobile').classList.add('open');
+        }
+
+        function closeMenuMobile() {
+            document.querySelector('.header__nav').classList.remove('open');
+            document.querySelector('.overlay-menu-mobile').classList.remove('open');
+        }
+    </script>
+</body>
+
+</html>
